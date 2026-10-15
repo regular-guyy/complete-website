@@ -1,0 +1,170 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+}
+header {
+  width: 100vw;
+  /* border: 2px
+     solid blue; */
+  color: white;
+  background-color: black;
+}
+.navigation {
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  padding: 5px;
+
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+.navigation-list li {
+  list-style-type: none;
+}
+.head{
+    padding-bottom: 70px;
+}
+
+.head h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.head p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  color: rgb(101, 101, 101);
+}
+button {
+  margin-left: 700px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  
+}
+button:hover {
+  background-color: aqua;
+}
+.hamburger-container {
+  display: none;
+}
+.partt {
+  background-color: rgb(227, 221, 221);
+display: flex;
+justify-content: center;
+}
+.part {
+    /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+
+  justify-content:  space-between;
+
+  /* margin: 0 auto; */
+  padding: 100px 0 100px 0;
+  /* gap: 100px; */
+
+  width: 80%;
+}
+.part-text h2 {
+  font-size: 40px;
+}
+.part-text p {
+  font-size: 25px;
+}
+.part-image {
+  border-radius: 10px;
+}
+
+.pott{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.pot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 100px; */
+    /* margin: 0 auto; */
+    
+    width: 80%;
+}
+.pot-text, .part-text {
+    /* border: 2px solid red; */
+  width: 45%;
+}
+.pot-text h3 {
+    /* border: 2px solid red; */
+  font-size: 40px;
+}
+.pot-text p {
+  font-size: 25px;
+}
+.pot-image {
+  border-radius: 10px;
+}
+.doct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.te {
+  border-radius: 50%;
+}
+
+/* tablet responsiveness */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hamburger-container {
+    display: flex;
+    /* border: 2px solid white; */
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-solid {
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 25px;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+  button {
+    margin-left: 260px;
+  }
+
+  .part {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .pot {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .doct {
+    display: flex;
+    flex-direction: column;
+  }
+}
